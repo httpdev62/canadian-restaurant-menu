@@ -1,0 +1,84 @@
+:root {
+
+    --warm-birch: #F7F3EB;
+    /* fundo principal */
+    --charcoal-timber: #231F1E;
+    /* texto principal */
+    --deep-maple-amber: #9E3B24;
+    /* primária / destaque */
+    --boreal-pine: #2A4034;
+    /* secundária */
+    --golden-sap: #D99B26;
+    /* acento / detalhes */
+    --font-display: "Fraunces", "Playfair Display", "Lora", Georgia, serif;
+    --font-body: "Plus Jakarta Sans", "Inter", "DM Sans", system-ui, sans-serif;
+    --font-handwritten: "Caveat", cursive;
+    --font-stamp: "Special Elite", monospace;
+    --stamp-border: 1px solid currentColor;
+    --stamp-radius: 2px;
+}
+
+* {
+    padding: 0%;
+    margin: auto;
+}
+
+body {
+    background-color: var(--warm-birch);
+    color: var(--charcoal-timber);
+}
+
+header .description {
+    font-family: var(--font-handwritten);
+    font-weight: 400;
+}
+
+.logo {
+    width: 150px;
+}
+
+.banner {
+    background-image: url(Photos/banner-maplify.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.dishes-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.dish-image {
+    border-radius: 10px;
+    width: 50px;
+}
+
+h1,
+h2 {
+    font-family: var(--font-display);
+}
+
+
+footer {
+    background-color: var(--boreal-pine);
+    color: var(--warm-birch);
+}
+
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--deep-maple-amber);
+    outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+    .dishes-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .dishes-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

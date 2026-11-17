@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="Photos/Group (1).svg">
+    <title> Maplify </title>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Photos/logo.png.png" alt="Maplify logo">
+        <img class="banner" src="Photos/banner-maplify.png" alt="Banner of the restaurant">
+        <h1> Maplify </h1>
+        <p> " Pull up a chair, shake off the cold, and stay awhile. At Maplify, we serve the kind of
+            honest, slow-cooked
+            Canadian comfort food you’d expect after a long afternoon on the ice—from proper gravy-drenched poutine and
+            spiced tourtière to warm butter tarts fresh from the oven." </p>
+    </header>
+    <nav>
+        <label for="categories"> Categories </label>
+        <select id="categories">
+            <option value="all"> All Dishes </option>
+            <option value="main"> Main Dishes </option>
+            <option value="sides"> Sides </option>
+            <option value="desserts"> Desserts </option>
+        </select>
+    </nav>
+    <main>
+        <div class="dishes-cards">
+            <article class="dish-card" data-category="main">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Poutine</h2>
+                <img class="dish-image" src="Photos/01-poutine.jpg" alt="Poutine Dish of Canada">
+                <p class="dish-description"> Crispy french fries topped with fresh, squeaky cheese curds and smothered
+                    in rich, hot gravy.</p>
+                <p class="dish-price"> CAD $14.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="desserts">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Chocolate and Hazelnut Nanaimo Bars</h2>
+                <img class="dish-image" src="Photos/02-nanaimo-bars.jpg"
+                    alt="Chocolate and Hazelnut Nanaimo Bars Dish of Canada">
+                <p class="dish-description"> Three-layered Canadian bars featuring a crunchy chocolate, coconut, and
+                    hazelnut graham cracker crust, a creamy vanilla-custard buttercream center, and a semisweet
+                    chocolate ganache topping.</p>
+                <p class="dish-price"> CAD $6.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="sides">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Potato Salad with Fresh Corn and Basil</h2>
+                <img class="dish-image" src="Photos/03-potato-salad-corn-basil.jpg"
+                    alt="Potato Salad with Fresh Corn and Basil Dish of Canada">
+                <p class="dish-description">Tender baby red potatoes tossed with sweet fresh corn, crisp celery,
+                    vinegar-soaked onions, and a creamy mayonnaise dressing brightened with fresh basil and dill.</p>
+                <p class="dish-price"> CAD $7.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="sides">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Barbecue-Spiced Potato Chips</h2>
+                <img class="dish-image" src="Photos/04-bbq-potato-chips.jpg"
+                    alt="Barbecue-Spiced Potato Chips Dish of Canada">
+                <p class="dish-description">Thinly sliced, vinegar-soaked russet potatoes fried until crisp and golden,
+                    then tossed in a smoky, sweet, and spicy blend of chipotle powder, paprika, cumin, coriander,
+                    cayenne, garlic powder, sugar, and salt.</p>
+                <p class="dish-price"> CAD $6.00 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="main">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Salami-and-Egg Mishmash</h2>
+                <img class="dish-image" src="Photos/05-salami-egg-mishmash.jpg"
+                    alt="Salami-and-Egg Mishmash Dish of Canada">
+                <p class="dish-description">Softly scrambled eggs cooked with sautéed onions, browned strips of Genoa
+                    salami, and wilted watercress, served alongside rye toast.</p>
+                <p class="dish-price"> CAD $14.00 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="sides">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Maple-Bacon Popovers</h2>
+                <img class="dish-image" src="Photos/06-maple-bacon-popovers.jpg"
+                    alt="Maple-Bacon Popovers Dish of Canada">
+                <p class="dish-description">Light, airy baked egg-and-flour rolls studded with crispy chopped thick-cut
+                    bacon and brushed with pure dark maple syrup.</p>
+                <p class="dish-price"> CAD $8.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="main">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>French (Canadian) Onion Soup</h2>
+                <img class="dish-image" src="Photos/07-french-canadian-onion-soup.jpg"
+                    alt="French (Canadian) Onion Soup Dish of Canada">
+                <p class="dish-description">Slow-caramelized onions simmered in a rich bacon, pork, and brown ale broth
+                    with fresh rosemary, topped with garlic croutons and melted Gruyère cheese.</p>
+                <p class="dish-price"> CAD $12.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="sides">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Jessamyn’s Sephardic Challah</h2>
+                <img class="dish-image" src="Photos/08-sephardic-challah.jpg"
+                    alt="Jessamyn’s Sephardic Challah Dish of Canada">
+                <p class="dish-description">Coiled round loaves of golden, honey-sweetened bread baked with toasted
+                    sesame, caraway, and anise seeds over a cornmeal-dusted crust.</p>
+                <p class="dish-price"> CAD $7.00 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="main">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Cheeseburgers with Maple-Curry Ketchup</h2>
+                <img class="dish-image" src="Photos/09-cheeseburger-maple-curry-ketchup.jpg"
+                    alt="Cheeseburgers with Maple-Curry Ketchup Dish of Canada">
+                <p class="dish-description">Juicy ground chuck and sirloin patties topped with melted American cheese,
+                    crisp lettuce, tomato, pickles, red onion, and homemade maple-curry ketchup on toasted brioche buns.
+                </p>
+                <p class="dish-price"> CAD $19.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="main">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Tourtière</h2>
+                <img class="dish-image" src="Photos/10-tourtiere.jpg" alt="Tourtière Dish of Canada">
+                <p class="dish-description">Traditional French-Canadian double-crust meat pie filled with seasoned
+                    minced pork, beef, and warm spices like clove and summer savory.</p>
+                <p class="dish-price"> CAD $18.00 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="desserts">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Butter Tart</h2>
+                <img class="dish-image" src="Photos/11-butter-tart.jpg" alt="Butter Tart Dish of Canada">
+                <p class="dish-description">Quintessential Canadian handheld pastry featuring a flaky, crisp crust
+                    filled with a rich, gooey, caramelized mixture of butter, sugar, and egg.</p>
+                <p class="dish-price"> CAD $5.50 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+            <article class="dish-card" data-category="sides">
+                <!--we use article in this case because each dish card can be a self-contained piece of content -->
+                <h2>Montreal Bagel</h2>
+                <img class="dish-image" src="Photos/12-montreal-bagel.jpg" alt="Montreal Bagel Dish of Canada">
+                <p class="dish-description">Dense, hand-rolled, wood-fired bagel boiled in honey-sweetened water for a
+                    slightly sweet flavor and chewy, crisp crust.</p>
+                <p class="dish-price"> CAD $5.00 </p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Maplify. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
